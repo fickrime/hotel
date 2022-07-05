@@ -1,7 +1,7 @@
 function Navigation() {
     return (
-        <div class="navigation">
-            <div class="container">
+        <div className="navigation">
+            <div className="container">
                 <a href="index.html">Home</a>
                 <a href="price.html">Price</a>
                 <a href="galery.html">Galery</a>

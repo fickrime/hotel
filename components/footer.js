@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <div class="footer">
+        <div className="footer">
             &copy; Hotel Banyuwangi Sejahtera
         </div>
     )
