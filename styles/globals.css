@@ -1,16 +1,150 @@
 html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
 }
 
-a {
-  color: inherit;
+.container {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.header {
+  color: #fff;
+  background-color: #BB3E03;
+  text-align: center;
+  padding: 20px;
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: #AE2012;
+}
+.navigation a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
+.navigation a:hover {
+  background-color: #001219;
+  color: #E9D8A6;
+}
 
-* {
+.hero {
+  height: 300px;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.galleries .gallery {
+  margin: 0px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 172px;
+}
+.galleries .gallery:hover {
+  border: 1px solid #777;
+}
+.galleries .gallery img {
+  width: 100%;
+  height: auto;
+}
+.galleries .desc {
+  padding: 15px;
+  text-align: center;
+}
+.galleries ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.prices table {
+  width: 100%;
+}
+
+.contact input[type=text],
+.contact select,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #0A9396;
+  border-radius: 4px;
   box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.contact input[type=submit] {
+  background-color: #005F73;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-animation: glowing 1300ms infinite;
+  -moz-animation: glowing 1300ms infinite;
+  -o-animation: glowing 1300ms infinite;
+  animation: glowing 1300ms infinite;
+}
+.contact input[type=submit]:hover {
+  background-color: #005F73;
+}
+
+.about .image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header-bg.jpg");
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.about .text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.footer {
+  background-color: #EE9B00;
+  text-align: center;
+  padding: 10px;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #0091b2;
+    -webkit-box-shadow: 0 0 3px #0091b2;
+  }
+  50% {
+    background-color: #21c7ed;
+    -webkit-box-shadow: 0 0 15px #21c7ed;
+  }
+  100% {
+    background-color: #0091b2;
+    -webkit-box-shadow: 0 0 3px #0091b2;
+  }
+}
+@keyframes glowing {
+  0% {
+    background-color: #0091b2;
+    box-shadow: 0 0 3px #0091b2;
+  }
+  50% {
+    background-color: #21c7ed;
+    box-shadow: 0 0 15px #21c7ed;
+  }
+  100% {
+    background-color: #0091b2;
+    box-shadow: 0 0 3px #0091b2;
+  }
 }
