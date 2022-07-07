@@ -60,7 +60,7 @@ function Book({ data }) {
                         <select name="room" id="room"  required>
                             {
                                 data.map((item, index) => {
-                                    return  <option value={JSON.stringify(item)}>{item.name}</option>
+                                    return  <option key={index} value={JSON.stringify(item)}>{item.name}</option>
                                 })
                             }
                         </select>
