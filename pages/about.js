@@ -27,4 +27,4 @@ function About() {
     )
 }
 
-export default Galery;
+export default About;
