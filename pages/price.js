@@ -16,12 +16,14 @@ function Price({ data }) {
             <tr>
               <td>Jenis Kamar</td>
               <td>Harga Kamar</td>
+              <td>View</td>
             </tr>
             {
                 data.map((item, index) => {
                 return <tr key={index}>
                     <td>{ item.name }</td>
                     <td>Rp { item.price } Per night</td>
+                    <td><Image src={item.img} width="100" height="100" /></td>
                   </tr>
                 })
             }
