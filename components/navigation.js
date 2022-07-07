@@ -9,6 +9,7 @@ function Navigation() {
                 <Link href="/book"><a>Book</a></Link>
                 <Link href="/galery"><a>Galery</a></Link>
                 <Link href="/about"><a>About</a></Link>
+                <Link href="/admin"><a>Admin</a></Link>
             </div>
         </div>)
 }
