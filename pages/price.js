@@ -19,7 +19,7 @@ function Price({ data }) {
             </tr>
             {
                 data.map((item, index) => {
-                return <tr>
+                return <tr key={index}>
                     <td>{ item.name }</td>
                     <td>Rp { item.price } Per night</td>
                   </tr>
