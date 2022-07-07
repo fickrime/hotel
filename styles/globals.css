@@ -148,3 +148,29 @@ body {
     box-shadow: 0 0 3px #0091b2;
   }
 }
+
+.book input[type=text], select, textarea, input[type=date] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.book label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.book input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book input[type=submit]:hover {
+  background-color: #45a049;
+}
